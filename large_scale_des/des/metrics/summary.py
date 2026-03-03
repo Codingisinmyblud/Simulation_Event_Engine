@@ -1,7 +1,7 @@
 class SummaryStat:
     """
     Simple aggregations (mean, p99, etc).
-    Uses some intentionally naive O(N^2) sorting/percentile finding.
+    Uses some intentionally naive O(N^2) sorting/percentile finding. I will change them to better and more efficient methods later after some research
     """
     def __init__(self, name):
         self.name = name
