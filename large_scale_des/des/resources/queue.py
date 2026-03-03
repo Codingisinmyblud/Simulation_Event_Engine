@@ -26,7 +26,7 @@ class FIFOQueue(Queue):
 class PriorityQueue(Queue):
     def push(self, item):
         self.items.append(item)
-        # Dumb prioritization using sort on every push O(n log n)
+        # Prioritizaion uses sort on every push O(n log n) [!!!WILL CHANGE LATER!!!]
         # Assuming item is a tuple (priority, value) or has a priority attr
         self.items.sort(key=lambda x: getattr(x, 'priority', x[0] if isinstance(x, tuple) else 0))
 
